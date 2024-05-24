@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
 }
-header{
+
+body, html {
+    overflow-x: hidden;
+}
+/*body{*/
+/*    overflow-y: hidden;*/
+/*}*/
+
+header {
     width: 100vw;
     border: 2px solid gray;
     height: 1069px;
     position: relative;
     background-color: black;
-    z-index: -2;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
-.img-header{
+
+.img-header {
     width: 100%; /* Адаптивна ширина */
     height: auto; /* Зберігайте пропорції */
     position: absolute;
@@ -22,7 +32,8 @@ header{
     left: 0;
     z-index: 1;
 }
-.navi{
+
+.navi {
     /*border: 2px solid gray;*/
     display: flex;
     justify-content: center;
@@ -30,12 +41,14 @@ header{
     width: 100%;
     margin-top: 50px;
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
     margin-left: 230px;
 }
-.navigation li{
+
+.navigation li {
     padding: 20px;
     height: 29px;
     color: #FFFFFF;
@@ -44,18 +57,21 @@ ul{
     font-weight: 400;
     font-size: 16px;
 }
+
 /*header ul li{*/
 /*    margin-left: 10px;*/
 
 /*}*/
-header nav{
+header nav {
     display: flex;
 }
-.header-logo{
+
+.header-logo {
     margin-bottom: 30px;
     margin-left: 300px;
 }
-.text-banner-info{
+
+.text-banner-info {
     width: 713px;
     height: 481px;
     display: flex;
@@ -65,7 +81,8 @@ header nav{
     /*border: 2px solid gray;*/
     margin-top: 150px;
 }
-.text-banner-1{
+
+.text-banner-1 {
     /* New innovation New motivation */
 
     width: 495px;
@@ -83,7 +100,8 @@ header nav{
 
 
 }
-.text-banner-2{
+
+.text-banner-2 {
     /* Тренуйся разом з GORILAS */
 
     width: 713px;
@@ -103,10 +121,12 @@ header nav{
 
 
 }
-.text-banner-2 span{
+
+.text-banner-2 span {
     color: #AF0404;
 }
-.text-banner-info button{
+
+.text-banner-info button {
     /* Frame 39 */
     display: flex;
     padding: 6px 30px;
@@ -116,7 +136,8 @@ header nav{
     border-radius: 6px;
 
 }
-.button-text{
+
+.button-text {
     /*width: 382px;*/
     /*height: 59px;*/
     color: #FFFFFF;
@@ -126,11 +147,13 @@ header nav{
     display: flex;
     align-items: center;
 }
-.button-text svg{
+
+.button-text svg {
     margin-bottom: -5px;
     margin-left: 10px;
 }
-.text-banner-3{
+
+.text-banner-3 {
     /* Перше заняття та консультація з тренером безкоштовно */
     width: 544px;
     height: 57px;
@@ -143,25 +166,37 @@ header nav{
     color: rgba(176, 172, 172, 0.8);
     margin-top: -20px;
 }
-.text-banner-3 span{
+
+.text-banner-3 span {
     color: #FFFFFF;
 }
-.header-logo-2{
+
+.header-logo-2 {
     margin-top: 50px;
     margin-left: 1150px;
 }
-main{
+
+main {
     background-color: #000000;
     width: 100vw;
     height: 1038px;
 }
-.section-1{
+
+.section-1 {
 
     border: 2px solid gray;
     width: 100%;
-
+    z-index: -2;
 }
-.section-1 h1{
+
+.box {
+    width: 86%;
+    border: 2px solid gray;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.section-1 h1 {
     /* Зробіть перший крок до здорового життя - відвідайте наш спортзал */
 
     width: 1625px;
@@ -178,14 +213,15 @@ main{
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
-.section-1 p{
+
+.section-1 p {
     /* У нашому спортзалі вас чекають сучасні тренажери для кардіо та силових тренувань, зони для функціонального тренування і растяжки. Наші професійні тренери завжди готові надати персоналізовану підтримку і поради з харчування, щоб допомогти вам досягти найкращих результатів. Атмосфера в спортзалі є дружньою та мотиваційною, де кожен може знайти підтримку для досягнення своїх цілей фітнесу. */
     width: 1331px;
     height: 143px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -193,11 +229,57 @@ main{
     letter-spacing: 0.05em;
     color: #FFFFFF;
     margin-left: 30px;
+    margin-top: -40px;
 }
-.section-1-info{
+
+.section-1-info {
     display: flex;
     justify-content: space-between;
 }
-.section-1-logo{
-    margin-top: 60px;
+
+.section-1-logo {
+    margin-top: 20px;
+}
+.img-play {
+
+    width: 86vw;
+}
+/*.play-logo {*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*    margin-top: 150px;*/
+/*    margin-left: 550px;*/
+/*}*/
+
+/*.time-logo {*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*    margin-top: 100px;*/
+/*    margin-left: 1150px;*/
+/*}*/
+.info-training{
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.info-training div{
+    display: flex;
+    margin-left: 50px;
+}
+.img-change{
+    border-radius: 20px;
+    border: 3px solid rgba(128, 128, 128, 0.5);
+    width: 41vw;
+    height: 50vh;
+}
+.img-train{
+    width: 41vw;
+    height: 50vh;
+}
+.img-change2{
+    width: 41vw;
+    height: 49vh;
+    border-radius: 20px;
+    border: 3px solid rgba(128, 128, 128, 0.5);
 }
