@@ -6,6 +6,7 @@
 
 body, html {
     overflow-x: hidden;
+    padding: 0;
 }
 
 /*body{*/
@@ -388,7 +389,7 @@ main {
     /* Кіт Оксана */
     width: 155px;
     height: 34px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -437,7 +438,7 @@ main {
     /* Кіт Оксана */
     width: 155px;
     height: 34px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -445,11 +446,12 @@ main {
     color: #151515;
     margin-left: -30px;
 }
-.box-1 span{
+
+.box-1 span {
     /* gym pro */
     width: 69px;
     height: 20px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 16px;
@@ -458,6 +460,7 @@ main {
     color: #AF0404;
     margin-left: -30px;
 }
+
 .box-1 svg {
     margin-top: 50px;
     margin-left: 60px;
@@ -486,20 +489,24 @@ main {
     text-align: justify;
     color: #000000;
 }
-.feedback-box-3{
+
+.feedback-box-3 {
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
 }
+
 .feedback-box-3 div {
     margin-left: 40px;
 }
-.box-man-1{
+
+.box-man-1 {
     display: flex;
     margin-bottom: 40px;
 }
-.box-man-2 p{
+
+.box-man-2 p {
     width: 490px;
     height: 86px;
     font-family: 'Montserrat', sans-serif;
@@ -512,11 +519,12 @@ main {
     overflow: hidden;
 
 }
-.box-man-1 span{
+
+.box-man-1 span {
     /* gym pro */
     width: 69px;
     height: 20px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 16px;
@@ -525,12 +533,13 @@ main {
     color: #AF0404;
     margin-left: -70px;
 }
+
 .box-man-1 h1 {
     margin-top: 50px;
     /* Кіт Оксана */
     width: 155px;
     height: 34px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -538,7 +547,150 @@ main {
     color: #151515;
     margin-left: -70px;
 }
-.logo-feed{
+
+.logo-feed {
     margin-left: 700px;
     margin-top: 100px;
+}
+
+footer {
+    display: flex;
+    height: 135vh;
+    background-color: black;
+}
+
+.register-train {
+    width: 500px;
+    height: 400px;
+    background-color: lightgray;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 110px;
+}
+
+.name, .phone {
+    width: 400px;
+    height: 40px;
+    background: darkgray;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    border: none; /* Видалення рамки */
+}
+
+input[type="text"], input[type="tel"] {
+    text-align: start;
+    box-sizing: border-box;
+}
+
+.butt {
+    /* Rectangle 27 */
+
+    width: 200px;
+    height: 51px;
+    background: #AF0404;
+    border-radius: 30px;
+    margin-left: 100px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+
+
+}
+
+.register-train h1:nth-last-of-type(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.register-train h1:nth-last-of-type(2) {
+    width: 336px;
+    height: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.footer-info ul, .footer-info span {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    /* Тренувальні програми Блог Новини Спільнота Інформація про членство */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 20px;
+}
+
+.footer-info span {
+    margin-top: 20px;
+}
+
+.footer-info svg {
+    margin-bottom: -70px;
+    margin-left: 20px;
+}
+
+.footer-photo img {
+    width: 800px;
+    height: 900px;
+    margin-left: 150px;
+}
+
+.gorilas {
+    /* GORILAS */
+
+    position: absolute;
+    width: 1875px;
+    height: 110px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110px;
+    /* identical to box height */
+    letter-spacing: 2.6em;
+    margin-top: 800px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+
 }
