@@ -7,6 +7,7 @@
 body, html {
     overflow-x: hidden;
 }
+
 /*body{*/
 /*    overflow-y: hidden;*/
 /*}*/
@@ -237,10 +238,12 @@ main {
 .section-1-logo {
     margin-top: 20px;
 }
+
 .img-play {
 
     width: 85.5vw;
 }
+
 /*.play-logo {*/
 /*    position: relative;*/
 /*    z-index: 2;*/
@@ -254,124 +257,63 @@ main {
 /*    margin-top: 100px;*/
 /*    margin-left: 1150px;*/
 /*}*/
-.info-training{
+.info-training {
     height: auto;
     background-color: black;
     display: flex;
-    flex-direction: column;
     margin-top: 100px;
     z-index: -1;
+    justify-content: center;
 }
-.info-training div{
-    display: flex;
-    margin-left: 50px;
-}
-.img-change{
-    border-radius: 25px;
-    border: 4px solid rgba(128, 128, 128, 0.5);
-    width: 41vw;
-    height: 49vh;
-    /*margin-left: -40px;*/
-}
-.img-train{
-    width: 41vw;
-    height: 50vh;
-}
-.img-change2{
-    width: 41vw;
-    height: 47vh;
-    border-radius: 25px;
-    border: 4px solid rgba(128, 128, 128, 0.5);
-    margin-top: 10px;
 
-}
-.img-train-2{
+.info-box, .info-box-2 {
     width: 41vw;
     height: 50vh;
-    margin-top: 5px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
-.info-box-1 .info-box-2{
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-.info-text-1{
-    /* ЗОНА ГРУПОВИХ ТРЕНУВАНЬ */
-    position: absolute;
-    width: 40vw;
+
+.info-box-2 img {
+    width: 41vw;
     height: 50vh;
+    z-index: 0;
+    border-radius: 30px;
+    margin-left: 25px;
+    box-shadow: 0 4px 6px rgba(128, 128, 128, 0.5);
+}
+
+.info-box img {
+    width: 41vw;
+    height: 50vh;
+    z-index: 0;
+    margin-right: 25px;
+}
+
+.info-text {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 43px;
     letter-spacing: 0.15em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #FFFFFF;
-    border: 2px solid gray;
-}
-.info-text-2{
-    /* КАРДІО ЗОНА */
+    z-index: 1;
     position: absolute;
-    width: 130vw;
-    height: 50vh;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 43px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.15em;
-    color: #FFFFFF;
-    border: 2px solid gray;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    padding: 10px;
 }
-.info-text-3{
-    /* ЗОНА СИЛОВИХ ТРЕНУВАНЬ */
-    position: absolute;
-    width: 40vw;
-    height: 55vh;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 43px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.15em;
-    justify-content: center;
-    color: #FFFFFF;
-    border: 2px solid gray;
-}
-.info-text-4{
-    /* ЗОНА ДЛЯ ЙОГИ/СТРЕЙЧИНГУ */
-    position: absolute;
-    width: 130vw;
-    height: 55.1vh;
-    font-family: 'Montserrat', sans-serif, "Sans Serif Collection";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 43px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.15em;
-    justify-content: center;
-    color: #FFFFFF;
-    border: 2px solid gray;
-}
-.feedback{
-    height: 100vh;
-    border: 2px solid gray;
+
+.feedback {
+    height: auto;
     margin-top: 150px;
 }
-.feedback-info span{
+
+.feedback-info span {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -379,13 +321,15 @@ main {
     /*line-height: 37px;*/
     color: #FFFFFF;
 }
-.feedback-info{
+
+.feedback-info {
     display: flex;
     justify-content: space-evenly;
 }
+
 .feedback-info span:nth-of-type(2) {
     /* ВІДГУКИ ВІДВІДУВАЧІВ */
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -393,103 +337,208 @@ main {
     /* identical to box height */
     color: #FFFFFF;
 }
-.feedback-info svg{
+
+.feedback-info svg {
     margin-bottom: -10px;
 }
+
 .feedback-user {
     margin-top: 50px;
     display: flex;
-    border: 2px solid gray;
-    /*position: relative; !* Застосування відносного позиціонування для контейнера *!*/
-    /*overflow: hidden; !* Заборона виходу елементів за межі контейнера *!*/
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
     height: auto;
 }
 
-/*.feedback-box-1, .feedback-box-2, .feedback-box-3 {*/
-/*    width: 600px;*/
-/*    height: 300px;*/
-/*    background-color: #FFFFFF;*/
-/*    border: 4px solid rgba(128, 128, 128, 0.5);*/
-/*    border-radius: 50px;*/
-/*    position: absolute;*/
-/*    display: flex;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*    flex-direction: column;*/
-/*}*/
-
-.feedback-box-1 {
-    /*left: -300px;*/
-    clip-path: inset(0 0 0 50%);
+.feedback-box-1,
+.feedback-box-2,
+.feedback-box-3 {
     width: 600px;
     height: 300px;
-    background-color: white;
+    background-color: lightgray;
     border-radius: 40px;
+    /*border: 2px solid gray;*/
+    position: relative;
+    flex-shrink: 0;
+}
+
+.feedback-box-1 {
+    clip-path: inset(0 0 0 50%);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
 }
 
 .feedback-box-2 {
-    /*left: calc(50% - 300px); !* Центрування другого блоку *!*/
-    width: 600px;
-    height: 300px;
-    background-color: white;
-    border-radius: 40px;
+    transform: translateX(-15%);
 }
 
 .feedback-box-3 {
-    /*right: -300px;*/
     clip-path: inset(0 50% 0 0);
-    width: 600px;
-    height: 300px;
-    background-color: white;
-    border-radius: 40px;
+    transform: translateX(10%);
 }
 
-/*.feedback-box-1 p, .feedback-box-2 p, .feedback-box-3 p {*/
-/*    width: 480px; !* Зменшено ширину, щоб текст не виходив за межі блоку *!*/
-/*    height: auto;*/
-/*    font-family: 'Montserrat', sans-serif;*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    color: #000000;*/
-/*    text-align: center; !* Додано вирівнювання тексту по центру *!*/
-/*}*/
+.feedback-box-1 h1 {
+    /* Михальчишин */
+    margin-top: -20px;
+    /* Кіт Оксана */
+    width: 155px;
+    height: 34px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #151515;
+    margin-left: 190px;
+    margin-bottom: 100px;
+}
 
-footer{
-    height: 100vh;
+.feedback-box-1 p {
+    /* У спортзалі "Віддайся Фітнесу" кожен крок — це крок до кращої версії себе. Наші сучасні тренажери та професійні інструктори допоможуть тобі впоратися з будь-яким викликом. */
+
+    width: 490px;
+    height: 81px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    color: #000000;
+    margin-bottom: -100px;
+}
+
+.zero {
+    z-index: 1;
+    margin-left: -280px;
+    margin-top: 80px;
+    margin-right: 120px;
+}
+
+.zero-2 {
+    z-index: 1;
+    margin: 80px -25px 100px -75px;
+    width: auto;
+}
+
+.box-1 {
     display: flex;
-    justify-content: space-evenly;
-    background-color: black;
+    justify-content: center;
+    margin-bottom: 40px;
 }
-.test-1, .test-2, .test-3, .test-4{
-    width: 40vw;
-    height: 45vh;
-    background-color: black;
-    margin-top: 10px;
-    z-index: -1;
-    /*position: relative;*/
+
+.box-1 h1 {
+    margin-top: 50px;
+    /* Кіт Оксана */
+    width: 155px;
+    height: 34px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #151515;
+    margin-left: -30px;
 }
-.test-1 img{
-    width: 40vw;
-    height: 45vh;
-    z-index: 0;
+.box-1 span{
+    /* gym pro */
+    width: 69px;
+    height: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #AF0404;
+    margin-left: -30px;
 }
-.test-1 h1{
-    z-index: 1;
-    color: white;
+.box-1 svg {
+    margin-top: 50px;
+    margin-left: 60px;
 }
-.tss{
-    z-index: 1;
-    position: absolute; /* Абсолютне позиціонування для тексту */
-    margin-top: 20vh;
-    margin-left: 55px;
-    text-align: center; /* Вирівнювання тексту по центру */
-    border: 2px solid gray;
-    padding: 10px; /* Додатковий відступ */
-    background: rgba(0, 0, 0, 0.5); /* Напівпрозоре тло для кращої читабельності */
-    color: white;
+
+.feedback-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 }
-.test-3 img{
-    width: 40vw;
-    height: 45vh;
-    z-index: 0;
+
+.feedback-box-2 div {
+    margin-left: 40px;
+}
+
+.box-2 p {
+    /* "Спортзал — моя друга домівка! Тут кожен день — новий виклик, нові досягнення. Відчуваю, як моє тіло стає сильнішим, а душа — щасливішою. */
+    width: 490px;
+    height: 81px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    color: #000000;
+}
+.feedback-box-3{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.feedback-box-3 div {
+    margin-left: 40px;
+}
+.box-man-1{
+    display: flex;
+    margin-bottom: 40px;
+}
+.box-man-2 p{
+    width: 490px;
+    height: 86px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    color: #000000;
+    overflow: hidden;
+
+}
+.box-man-1 span{
+    /* gym pro */
+    width: 69px;
+    height: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #AF0404;
+    margin-left: -70px;
+}
+.box-man-1 h1 {
+    margin-top: 50px;
+    /* Кіт Оксана */
+    width: 155px;
+    height: 34px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #151515;
+    margin-left: -70px;
+}
+.logo-feed{
+    margin-left: 700px;
+    margin-top: 100px;
 }
