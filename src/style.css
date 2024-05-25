@@ -293,6 +293,7 @@ main {
 .info-box-1 .info-box-2{
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 .info-text-1{
     /* ЗОНА ГРУПОВИХ ТРЕНУВАНЬ */
@@ -309,6 +310,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+    border: 2px solid gray;
 }
 .info-text-2{
     /* КАРДІО ЗОНА */
@@ -326,6 +328,7 @@ main {
     justify-content: center;
     letter-spacing: 0.15em;
     color: #FFFFFF;
+    border: 2px solid gray;
 }
 .info-text-3{
     /* ЗОНА СИЛОВИХ ТРЕНУВАНЬ */
@@ -343,6 +346,7 @@ main {
     letter-spacing: 0.15em;
     justify-content: center;
     color: #FFFFFF;
+    border: 2px solid gray;
 }
 .info-text-4{
     /* ЗОНА ДЛЯ ЙОГИ/СТРЕЙЧИНГУ */
@@ -360,6 +364,7 @@ main {
     letter-spacing: 0.15em;
     justify-content: center;
     color: #FFFFFF;
+    border: 2px solid gray;
 }
 .feedback{
     height: 100vh;
@@ -371,7 +376,7 @@ main {
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 37px;
+    /*line-height: 37px;*/
     color: #FFFFFF;
 }
 .feedback-info{
@@ -394,45 +399,97 @@ main {
 .feedback-user {
     margin-top: 50px;
     display: flex;
-    width: 100%;
     border: 2px solid gray;
-    position: relative; /* Застосування відносного позиціонування для контейнера */
-    overflow: hidden; /* Заборона виходу елементів за межі контейнера */
+    /*position: relative; !* Застосування відносного позиціонування для контейнера *!*/
+    /*overflow: hidden; !* Заборона виходу елементів за межі контейнера *!*/
+    height: auto;
 }
 
-.feedback-box-1, .feedback-box-2, .feedback-box-3 {
-    width: 600px;
-    height: 300px;
-    background-color: #FFFFFF;
-    border: 4px solid rgba(128, 128, 128, 0.5);
-    border-radius: 50px;
-    position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
+/*.feedback-box-1, .feedback-box-2, .feedback-box-3 {*/
+/*    width: 600px;*/
+/*    height: 300px;*/
+/*    background-color: #FFFFFF;*/
+/*    border: 4px solid rgba(128, 128, 128, 0.5);*/
+/*    border-radius: 50px;*/
+/*    position: absolute;*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*}*/
 
 .feedback-box-1 {
-    left: -300px;
+    /*left: -300px;*/
     clip-path: inset(0 0 0 50%);
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    border-radius: 40px;
 }
 
 .feedback-box-2 {
-    left: calc(50% - 300px); /* Центрування другого блоку */
+    /*left: calc(50% - 300px); !* Центрування другого блоку *!*/
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    border-radius: 40px;
 }
 
 .feedback-box-3 {
-    right: -300px;
+    /*right: -300px;*/
     clip-path: inset(0 50% 0 0);
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    border-radius: 40px;
 }
 
-.feedback-box-1 p, .feedback-box-2 p, .feedback-box-3 p {
-    width: 480px; /* Зменшено ширину, щоб текст не виходив за межі блоку */
-    height: auto;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #000000;
-    text-align: center; /* Додано вирівнювання тексту по центру */
+/*.feedback-box-1 p, .feedback-box-2 p, .feedback-box-3 p {*/
+/*    width: 480px; !* Зменшено ширину, щоб текст не виходив за межі блоку *!*/
+/*    height: auto;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    color: #000000;*/
+/*    text-align: center; !* Додано вирівнювання тексту по центру *!*/
+/*}*/
+
+footer{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.test-1, .test-2, .test-3, .test-4{
+    width: 40vw;
+    height: 45vh;
+    background-color: black;
+    margin-top: 10px;
+    z-index: -1;
+    /*position: relative;*/
+}
+.test-1 img{
+    width: 40vw;
+    height: 45vh;
+    z-index: 0;
+}
+.test-1 h1{
+    z-index: 1;
+    color: white;
+}
+.tss{
+    z-index: 1;
+    position: absolute; /* Абсолютне позиціонування для тексту */
+    margin-top: 20vh;
+    margin-left: 55px;
+    text-align: center; /* Вирівнювання тексту по центру */
+    border: 2px solid gray;
+    padding: 10px; /* Додатковий відступ */
+    background: rgba(0, 0, 0, 0.5); /* Напівпрозоре тло для кращої читабельності */
+    color: white;
+}
+.test-3 img{
+    width: 40vw;
+    height: 45vh;
+    z-index: 0;
 }
